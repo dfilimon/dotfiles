@@ -2,7 +2,6 @@
 set nocompatible
 
 call pathogen#infect()
-call yankstack#setup()
 
 " Wrap too long lines
 set wrap
@@ -104,12 +103,11 @@ if has("gui")
         map <F1> :set invmacmeta<CR>
     endif
     set guioptions=-t
-    colorscheme desert
 else
     set t_Co=256
     set background=dark
-    colorscheme solarized
 endif
+colorscheme desert
 
 " Mappings
 " For window switching
